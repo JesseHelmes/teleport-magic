@@ -61,6 +61,8 @@ Planned Features
 - Advanced item
 	- allows you to scroll to increase and decrease distrance
 	- show a indicator on how far you go (transparent player)
+	- max block distance (100)
+		- add to config
 - Wanted to teleport living entity mount too
 - include pets?
 - teleport blink from Aphmau

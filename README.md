@@ -63,3 +63,5 @@ Planned Features
 	- show a indicator on how far you go (transparent player)
 - Wanted to teleport living entity mount too
 - include pets?
+- teleport blink from Aphmau
+- teleport sound from Aphmau

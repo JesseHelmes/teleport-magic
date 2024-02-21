@@ -1,0 +1,6 @@
+{
+	"parent": "teleport_magic:item/hide_in_hand",
+	"textures": {
+		"layer0": "teleport_magic:item/teleport_magic"
+	}
+}

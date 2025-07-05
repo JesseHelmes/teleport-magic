@@ -4,14 +4,14 @@ import com.example.teleport_magic.TeleportMagicMod;
 import com.example.teleport_magic.item.TeleportMagic;
 
 import net.minecraft.world.item.Item;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryObject;
+import net.neoforged.neoforge.registries.DeferredItem;
+import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class ItemInit {
-	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS,
-			TeleportMagicMod.MODID);
+	public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(TeleportMagicMod.MODID);
 
-	public static final RegistryObject<TeleportMagic> TELEPORT_MAGIC = ITEMS.register("teleport_magic",
-	() -> new TeleportMagic((new Item.Properties()).fireResistant().stacksTo(1)));
+	public static final DeferredItem<TeleportMagic> TELEPORT_MAGIC = ITEMS.registerItem("teleport_magic",
+			TeleportMagic::new,
+			new Item.Properties().fireResistant().stacksTo(1)
+		);
 }
